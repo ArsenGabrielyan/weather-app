@@ -9,5 +9,5 @@
      -moz-osx-font-smoothing: grayscale;
 }
 @import "./app/app.component.scss";
-@import "./app/settings/settings.component.scss";
-@import "./app/resp.scss";
+@import "./app/components/settings/settings.component.scss";
+@import "./app/scss/resp.scss";

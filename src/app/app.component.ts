@@ -1,7 +1,7 @@
 import { AfterViewInit, Component } from '@angular/core';
 import { finalize, map } from 'rxjs';
-import { HttpService } from './http.service';
-import { OtherFeaturesService } from './other-features.service';
+import {HttpService} from "./services/http.service";
+import {OtherFeaturesService} from "./services/other-features.service"
 
 @Component({
   selector: 'app-root',
