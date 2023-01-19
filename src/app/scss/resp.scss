@@ -1,7 +1,6 @@
 @media screen and (max-width: 600px) {
      .weather-container{
-          .upper{width: 95% !important;.frm-group{flex-direction: column;button, input{width: 100% !important;}}.geo-btn{width: 100% !important;}}
-          .lower{width: 95% !important;text-align: center;.details img{width: 64px!important;}.other-details{@include flex-align(center, center);flex-direction: column;li{margin: 10px!important;}}}
+          .upper{width: 95% !important;.frm-group{flex-direction: column;button, input{width: 100% !important;}}.geo-btn{width: 100% !important;}}.lower{width: 95% !important;text-align: center;.details img{width: 64px!important;}.other-details{@include flex-align(center, center);flex-direction: column;li{margin: 10px!important;}}}
      }
      .box span{width: 30px !important;height: 30px !important;}
 }

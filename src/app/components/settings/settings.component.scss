@@ -1,9 +1,9 @@
-$red: #dc3545;$blue: #19a5d8;$green: #22b455;$dark: #2f2f2f;$light: #e8e8e8;$yellow: #FFBF00;$orange: #FF6D28;$pink: #F56EB3;
+$red: #dc3545;$blue: #19a5d8;$green: #22b455;$dark: #2f2f2f;$yellow: #FFBF00;$orange: #FF6D28;$pink: #F56EB3;
 .option-title{font-size: 21px;font-weight: 400;margin: 10px 0;}.options{list-style: none;}
 .box{
      padding: 5px;border-radius: 7px;
      span{display: inline-block;width: 40px;height: 40px;text-indent: -99999px;margin: 5px;border: 2px solid transparent;cursor: pointer;}
-     #red{background-color: $red;}#blue{background-color: $blue;}#green{background-color: $green;}#yellow{background-color: $yellow;}#orange{background-color: $orange;}#pink{background-color: $pink;}#dark{background-color: $dark;}#light{background-color: $light; border-color: #2f2f2f;}
+     #red{background-color: $red;}#blue{background-color: $blue;}#green{background-color: $green;}#yellow{background-color: $yellow;}#orange{background-color: $orange;}#pink{background-color: $pink;}#dark{background-color: $dark;}
 }
 .brightness-box{
      width: 100%;max-width: 400px;height: 60px;border: 2px solid #2f2f2f;

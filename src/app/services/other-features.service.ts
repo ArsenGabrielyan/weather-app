@@ -5,8 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class OtherFeaturesService {
   getWeatherFromCode(code: number){
-    let val;
-    switch (code) {
+    let val;switch (code) {
       case 0: val = "Clear Sky"; break;
       case 1: val = "Mainly Clear"; break;
       case 2: val = "Partly Cloudy"; break;
