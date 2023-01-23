@@ -1,11 +1,7 @@
 $content-background: #fafafa;
-$blue: #19a5d8;
+$blue: #0092ff;
 $grey: #777;
-@mixin flex-align($j,$a){justify-content: $j;align-items: $a;}
-@mixin button($w: 100%, $c){
-     width: $w;font-size: 20px;padding: 8px 20px;border: 2px solid $c;background: none;outline: none;color: $c;border-radius: 7px;transition: .3s ease all;cursor: pointer;
-     &:hover{background-color: $c;color: white;}
-}
+@import "./scss/mixins.scss";
 .weather-container{
      display: flex;flex-direction: column;@include flex-align(center, center);
      min-height: 100vh;background-color: $blue;

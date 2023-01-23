@@ -10,7 +10,7 @@ export class SettingsComponent implements OnInit {
   styleDisplay = document.createElement("style");
   colorbox: ColorBox[] = [
     {colorId: "red", color: "#dc3545"},
-    {colorId: "blue", color: "#19a5d8"},
+    {colorId: "blue", color: "#0092ff"},
     {colorId: "green", color: "#22b455"},
     {colorId: "yellow", color: "#FFBF00"},
     {colorId: "orange", color: "#FF6D28"},
