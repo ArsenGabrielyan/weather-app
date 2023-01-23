@@ -19,12 +19,18 @@ export class SettingsComponent implements OnInit {
   ];
   brightness = localStorage.getItem("brightness") || 100;
   
-  ngOnInit():void{localStorage.setItem("brightness",String(100));document.getElementsByTagName("head")[0].appendChild(this.styleDisplay)}
+  ngOnInit():void{
+    localStorage.setItem("brightness",String(100));
+    document.getElementsByTagName("head")[0].appendChild(this.styleDisplay)
+  }
   changeBgColor(id:string){
     const selectedItem = document.getElementById(id)!;
     const applied = `#btn{border-color: ${selectedItem.innerHTML};color: ${selectedItem.innerHTML};}#btn:hover{background-color: ${selectedItem.innerHTML};color: white;}.brightness-box #range{background-color: ${selectedItem.innerHTML} !important;} #search-input:focus{border-color: ${selectedItem.innerHTML};}`;
     document.getElementById("app")!.style.backgroundColor = selectedItem.innerHTML;
     this.styleDisplay.appendChild(document.createTextNode(applied));
   }
-  handleChangeBrightness = ()=> {localStorage.setItem('brightness',`${this.brightness}`);document.getElementById("app")!.style.filter = `brightness(${this.brightness}%)`}
+  handleChangeBrightness(){
+    localStorage.setItem('brightness',`${this.brightness}`);
+    document.getElementById("app")!.style.filter = `brightness(${this.brightness}%)`;
+  }
 }
