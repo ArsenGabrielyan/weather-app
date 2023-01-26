@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ColorBox } from '../../interfaces/color-box';
+import { IColorBox } from '../../interfaces/color-box';
 
 @Component({
   selector: 'weather-settings',
@@ -8,7 +8,7 @@ import { ColorBox } from '../../interfaces/color-box';
 })
 export class SettingsComponent implements OnInit {
   styleDisplay = document.createElement("style");
-  colorbox: ColorBox[] = [
+  colorbox: IColorBox[] = [
     {colorId: "red", color: "#dc3545"},
     {colorId: "blue", color: "#0092ff"},
     {colorId: "green", color: "#22b455"},

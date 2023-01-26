@@ -1,5 +1,4 @@
 @mixin flex-align($j,$a){justify-content: $j;align-items: $a;}
 @mixin button($w: 100%, $c){
-     width: $w;font-size: 20px;padding: 8px 20px;border: 2px solid $c;background: none;outline: none;color: $c;border-radius: 7px;transition: .3s ease all;cursor: pointer;
-     &:hover{background-color: $c;color: white;}
+     width: $w;font-size: 20px;padding: 8px 20px;border: 2px solid $c;background: none;outline: none;color: $c;border-radius: 7px;transition: .3s ease all;cursor: pointer;&:hover{background-color: $c;color: white;}
 }

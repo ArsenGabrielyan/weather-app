@@ -23,8 +23,7 @@ $grey: #777;
           h2{margin: 10px 0;}.weather-type{font-size: 24px;}
           .details{width: 100%;font-size: 32px;padding: 0 20px;display: flex;@include flex-align(center, center);h2{margin-left: 20px;}img{max-width: 96px;margin: 0;padding: 0;}}
           .other-details{
-               padding: 0 10px;list-style: none;font-size: 18px;display: flex;
-               @include flex-align(space-between, center);
+               padding: 0 10px;list-style: none;font-size: 18px;display: flex;@include flex-align(space-between, center);
                li{display: flex;@include flex-align(space-between, center);margin: 20px 30px;img{width: 32px;margin: 0 10px;}}
           }
      }

@@ -7,8 +7,7 @@ $red: #dc3545;$blue: #0092ff;$green: #22b455;$dark: #2f2f2f;$yellow: #FFBF00;$or
 }
 .brightness-box{
      width: 100%;max-width: 400px;height: 60px;border: 2px solid #2f2f2f;
-     border-radius: 8px;padding: 0 20px;display: flex;justify-content: space-between; align-items: center;
-     span{margin: 0 10px;}
+     border-radius: 8px;padding: 0 20px;display: flex;justify-content: space-between; align-items: center;span{margin: 0 10px;}
      #range{
           width: 100%;appearance: none;background-color: $blue;height: 3px;outline: none;
           &::-webkit-slider-thumb{appearance: none;width: 22px;height: 22px;background: #333;border-radius: 50%;cursor: pointer;}
