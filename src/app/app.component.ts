@@ -52,8 +52,8 @@ export class AppComponent implements AfterViewInit {
     }
   }
   getPlace(place:any){
-    const {city,village,town,municipality, country, state, hamlet} = place.address,
-    mentionedCommunity = city || village || town || municipality || state || hamlet;
+    const {city,village,town,municipality, country, state, hamlet} = place.address;
+    const mentionedCommunity = city || village || town || municipality || state || hamlet;
     this.city = `${mentionedCommunity || ""}${mentionedCommunity ? ", " : ""} ${country}`
   }
 }
