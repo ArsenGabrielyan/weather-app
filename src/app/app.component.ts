@@ -21,7 +21,9 @@ export class AppComponent implements AfterViewInit {
   constructor(private req: HttpService, private other: OtherFeaturesService){}
   ngAfterViewInit(): void {
     this.isShown = false;
-    window.onkeydown = (e)=>{if(e.key === "Enter") this.searchWeather();}
+    window.onkeydown = (e)=>{
+      if(e.key === "Enter") this.searchWeather();
+    }
   }
   switchTab(tab:string){this.tab = tab;}
   getWeather(val:any){
@@ -35,7 +37,10 @@ export class AppComponent implements AfterViewInit {
     this.current = this.other.getWeatherFromCode(this.code)!;
   }
   searchWeather(){
-    if(this.input.trim() === "") {alert("Enter City or Location");this.input = ""} 
+    if(this.input.trim() === "") {
+      alert("Enter City or Location");
+      this.input = ""
+    } 
     else this.req.getWeatherDetails(this.input).subscribe(val=>val.pipe(map((res:any)=>this.getWeather(res)),finalize(()=>this.input="")).subscribe());
   }
   showWeatherFromPosition(){
